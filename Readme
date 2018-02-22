@@ -1,0 +1,19 @@
+Supported tags and respective Dockerfile links
+==============================================
+4, 4.8, latest ([docker-phploy/4/Dockerfile](https://github.com/pockost/docker-phploy/blob/master/4/Dockerfile))
+
+
+A docker php image ready to deploy you project
+==============================================
+
+Available environment variable :
+================================
+
+
+Usage example
+=============
+
+
+Notes
+=====
+
