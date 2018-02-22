@@ -2,7 +2,7 @@ FROM php:alpine
 
 ENV COMPOSER_VERSION 1.6.3
 ENV COMPOSER_SHA256 52cb7bbbaee720471e3b34c8ae6db53a38f0b759c06078a80080db739e4dcab6
-ENV PHPLOY_VERSION 4.7
+ENV PHPLOY_VERSION 4.8
 
 ADD https://getcomposer.org/download/${COMPOSER_VERSION}/composer.phar /usr/local/bin/composer
 
