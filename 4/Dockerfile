@@ -9,7 +9,7 @@ ADD https://getcomposer.org/download/${COMPOSER_VERSION}/composer.phar /usr/loca
 RUN hash=$( sha256sum /usr/local/bin/composer | awk '{ print $1 }' ) \
     && test $hash == $COMPOSER_SHA256 || exit 1 \
     && chmod +x /usr/local/bin/composer \
-    && sleep 1 \
+    && apk add --no-cache git \
     && /usr/local/bin/composer global require "banago/phploy:4.7" \
     && mv /root/.composer/vendor/banago/phploy/dist/phploy.phar /usr/local/bin/phploy \
     && rm -r /root/.composer \
