@@ -2,9 +2,9 @@ FROM php:alpine
 
 ENV COMPOSER_VERSION 1.6.3
 ENV COMPOSER_SHA256 52cb7bbbaee720471e3b34c8ae6db53a38f0b759c06078a80080db739e4dcab6
-ENV PHPLOY_VERSION 4.8.5
 ENV PATH $PATH:/root/.composer/vendor/bin
 
+ONBUILD ARG PHPLOY_VERSION
 ONBUILD RUN  apk add --no-cache git curl openssh-client \
   && curl https://getcomposer.org/download/${COMPOSER_VERSION}/composer.phar > /usr/local/bin/composer \
   && hash=$( sha256sum /usr/local/bin/composer | awk '{ print $1 }' ) \
