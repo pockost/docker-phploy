@@ -28,22 +28,28 @@ Supported tags and respective Dockerfile links
 A docker php image ready to deploy you project
 ==============================================
 
+PHPloy is a opensource product maintained by banago (<https://github.com/banago/PHPloy>). This docker image allow you to run phploy within docker. The container is based on alpine linux, this result in a small image.
+The image is packaged with SFTP tools.
+
 
 Available environment variable :
 ================================
 
-Same as phploy project 
+You can use the same environment variable as phploy permit. For the instance
 
-PHPLOY_HOST
-PHPLOY_USER
-PHPLOY_PASS
-PHPLOY_PATH
+`PHPLOY_HOST`
+`PHPLOY_PORT`
+`PHPLOY_PASS`
+`PHPLOY_PATH`
+`PHPLOY_USER`
+`PHPLOY_PRIVKEY`
 
 Usage example
 =============
-
-docker run --rm -v /path/to/src:/app pockost/phploy --help
+docker run --rm -e PHPLOY_HOST=1.2.3.4 -e PHPLOY_USER=username -e PHPLOY_PASS=password -v /path/to/src:/app pockost/phploy --help
 
 Notes
 =====
+Thank to Banago for PHPLoy ! <https://github.com/banago/PHPloy>
+Alpine linux is a small linux distro <https://alpinelinux.org/>
 
