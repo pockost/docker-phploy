@@ -25,10 +25,10 @@ Supported tags and respective Dockerfile links
 
 
 
-A docker php image ready to deploy you project
+A docker php image ready to deploy your project
 ==============================================
 
-PHPloy is a opensource product maintained by banago (<https://github.com/banago/PHPloy>). This docker image allow you to run phploy within docker. The container is based on alpine linux, this result in a small image.
+PHPloy is a opensource product maintained by banago (<https://github.com/banago/PHPloy>). This docker image allow you to run phploy with docker. The container is based on alpine linux, this result in a small image.
 The image is packaged with SFTP tools.
 
 
