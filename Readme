@@ -43,6 +43,9 @@ You can use the same environment variable as phploy permit. For the instance
 `PHPLOY_PASS`
 `PHPLOY_PATH`
 `PHPLOY_USER`
+
+
+Toto fait du vélo
 `PHPLOY_PRIVKEY`
 
 Usage example
